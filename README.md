@@ -35,4 +35,6 @@ The goal of this assignment was to take an existing webpage and refactor the HTM
 * Lines 117-136: this block of CSS selectors and declarations (reflected in the < aside >< / aside > tags in the HTML and the sidebar in the webpage) can also be consolidated into three sections based on their identical declarations
 * Line 147: ".footer h2" has been changed to ".footer h4" to reflect the corresponding change in the HTML page
 
-
+# URLs:
+* deployed application: https://CrainDavis.github.io/Homework-1/
+* GitHub Repository: https://github.com/CrainDavis/Homework-1.git
