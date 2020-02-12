@@ -4,7 +4,7 @@ The goal of this assignment was to take an existing webpage and refactor the HTM
 
 -----------------------------------------------------
 
-# Below, I list the changes made to the HTML and CSS pages:
+Below, I list the changes made to the HTML and CSS pages:
 
 -----------------------------------------------------
 
@@ -32,14 +32,14 @@ The goal of this assignment was to take an existing webpage and refactor the HTM
 ## changes made to CSS:
 * comments added before each section
     * Lines: 11, 46, 57, 78, 110, 142
-* Line 29: ".header div" has been changed to ".header nav" to reflect the corresponding change in the HTML page (see Line 13 of this README.md)
+* Line 29: ".header div" has been changed to ".header nav" to reflect the corresponding change in the HTML page
 * Line 36: ".header div ul {list-style-type: none;}" deleted, as it has no affect on the webpage
 * Line 37: ".header div ul li" changed to ".header nav ul li" to reflect the corresponding change in the HTML page
 *  Lines 82-104: this block of CSS selectors and declarations have been moved from their original position (Lines 137-189 in the unaltered original CSS page) to here
     * In addition the selectors in this "main content section" can be consolidated significantly; they can be grouped into three subsections of content based on the identical declarations
+    
+    Before:
 ```    
-Before:
-
 .search-engine-optimization {
 margin-bottom: 20px;
 padding: 50px;
@@ -94,9 +94,9 @@ margin-bottom: 20px;
 font-size: 36px;
 }
 ```
-```
-After:
 
+After:
+```
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
@@ -125,9 +125,8 @@ font-size: 36px;
 *  Lines 108-115: this ".benefits" class selector contains two irrelevent declarations that have been deleted: "clear: both" and "height: 100%"
 * Lines 117-136: this block of CSS selectors and declarations (reflected in the < aside >< / aside > tags in the HTML and the sidebar in the webpage) can also be consolidated into three sections based on their identical declarations
 
-```
 Before:
-
+```
 .benefit-lead {
 margin-bottom: 32px;
 color: #ffffff;
@@ -177,9 +176,8 @@ max-width: 150px;
 }
 ```
 
-```
 After:
-
+```
 .benefit-lead,
 .benefit-brand,
 .benefit-cost {
