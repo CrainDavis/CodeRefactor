@@ -8,7 +8,7 @@ The goal of this assignment was to take an existing webpage and refactor the HTM
 * comments added before each section
     * Lines: 7, 12, 29, 32, 56, 81
 * changed the website title (Line 8) from "website" to "Horiseon"
-* changes to < div > < / div > tags to reflect semantic HTML elements:
+* changes to <div></div> tags to reflect semantic HTML elements:
     * Lines 13 and 28: < div > < / div > tags changed to < header > < / header > tags tags
     * Lines 15 and 27: < div > < / div > tags changed to < nav > < / nav > tags, for "navigation"
     * Lines 30 and 80: < main > < / main > tags added to define to main content
