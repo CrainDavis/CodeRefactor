@@ -206,4 +206,4 @@ max-width: 150px;
 
 # URLs:
 * deployed application: https://CrainDavis.github.io/Homework-1/
-* GitHub Repository: https://github.com/CrainDavis/Homework-1.git
+* GitHub Repository: https://github.com/CrainDavis/Homework-1
