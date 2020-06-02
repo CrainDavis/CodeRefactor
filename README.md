@@ -1,209 +1,155 @@
-# UofA Coding Bootcamp: Homework#1 (Code Refactor)
+# Code Refactor
+  ![GitHub repo size](https://img.shields.io/github/repo-size/CrainDavis/CodeRefactor?style=for-the-badge) ![GitHub code size](https://img.shields.io/github/languages/code-size/CrainDavis/CodeRefactor?color=gold&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/CrainDavis/CodeRefactor?color=green&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/CrainDavis/CodeRefactor?color=red&style=for-the-badge)
 
-The goal of this assignment was to take an existing webpage and refactor the HTML and CSS to make it more efficient, without changing the actual layout or design of the webpage itself.
+---
 
------------------------------------------------------
+## Description:
+This, my very first coding assignment as a student at the University of Arizona's Coding Bootcamp, is a code refactor of a basic webpage. The goal of this assignment was to improve the HTML and CSS (make it more efficient) without changing a single aspect of the actual layout/design of the webpage itself.
 
-Below, I list the changes made to the HTML and CSS pages:
+---
 
------------------------------------------------------
+## Table of Contents:
+* [License](#license)
+* [Contributing](#contributing)
+* [URLs](#urls)
+* [Questions](#questions)
 
-## changes made to HTML:
-* comments added before each section
-    * Lines: 7, 12, 29, 32, 56, 81
-* changed the website title (Line 8) from "website" to "Horiseon"
-* changes to < div > < / div > tags to reflect semantic HTML elements:
-    * Lines 13 and 28: < div > < / div > tags changed to < header > < / header > tags tags
-    * Lines 15 and 27: < div > < / div > tags changed to < nav > < / nav > tags, for "navigation"
-    * Lines 30 and 80: < main > < / main > tags added to define to main content
-    * Line 31: < div > < / div > tags changed to < section > < / section > tags tags to identify the image as its own section
-    * Lines 33 and 55: < div >< / div > changed to < section > < / section > to identify the three articles as one section
-    * Lines 34&40, 41&47, and 48&54: each pair of < div >< / div > tags changed to < article >< / article > tags to identify each of the three as separate subsections of content within one section
-    * Lines 57 and 79: < div >< / div > changed to < aside >< / aside > to reflect that this section is a sidebar
-    * Lines 58&64, 65&71, and 72&78: each pair of < div >< / div > tags changed to < article >< / article > tags to identify the three as separate subsections of content within one section
-    Lines 82 and 87: < div >< / div > changed to < footer >< / footer > to identify this as the page footer
-    Line 83: the < h2 >< / h2 > headings have been changed to < h4 >< / h4 > so that the headings throughout the page are sequential
-* changes made to correct problems with HTML functions
-    * Line 34: the id attribute is missing a class attribute, causing the page to be unable to render this link; class attribute has been added, reflecting the corresponding class selector in the CSS( seen as class="search-engine-optimization in the HTML now)
-    * Line 35, 42, 49, 60, 67, and 74: alt attributes added to the images
-    
-    -----------------------------------------------------
+---
 
-## changes made to CSS:
-* comments added before each section
-    * Lines: 11, 46, 57, 78, 110, 142
-* Line 29: ".header div" has been changed to ".header nav" to reflect the corresponding change in the HTML page
-* Line 36: ".header div ul {list-style-type: none;}" deleted, as it has no affect on the webpage
-* Line 37: ".header div ul li" changed to ".header nav ul li" to reflect the corresponding change in the HTML page
-*  Lines 82-104: this block of CSS selectors and declarations have been moved from their original position (Lines 137-189 in the unaltered original CSS page) to here
-    * In addition the selectors in this "main content section" can be consolidated significantly; they can be grouped into three subsections of content based on the identical declarations
-    
-    Before:
-```    
-.search-engine-optimization {
-margin-bottom: 20px;
-padding: 50px;
-height: 300px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: #0072bb;
-color: #ffffff;
-}
+## License:
+[MIT License](https://opensource.org/licenses/MIT)
 
-.online-reputation-management {
-margin-bottom: 20px;
-padding: 50px;
-height: 300px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: #0072bb;
-color: #ffffff;
-}
+Copyright © 2020 Chyna Davis
 
-.social-media-marketing {
-margin-bottom: 20px;
-padding: 50px;
-height: 300px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: #0072bb;
-color: #ffffff;
-}
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-.search-engine-optimization img {
-max-height: 200px;
-}
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-.online-reputation-management img {
-max-height: 200px;
-}
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-.social-media-marketing img {
-max-height: 200px;
-}
+---
 
-.search-engine-optimization h2 {
-margin-bottom: 20px;
-font-size: 36px;
-}
+## Contributing:
+Contributor Covenant Code of Conduct
+Our Pledge
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, religion, or sexual identity
+and orientation.
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
+Our Standards
+Examples of behavior that contributes to a positive environment for our
+community include:
 
-.online-reputation-management h2 {
-margin-bottom: 20px;
-font-size: 36px;
-}
+* Demonstrating empathy and kindness toward other people
+* Being respectful of differing opinions, viewpoints, and experiences
+* Giving and gracefully accepting constructive feedback
+* Accepting responsibility and apologizing to those affected by our mistakes,
+and learning from the experience
+* Focusing on what is best not just for us as individuals, but for the
+overall community
 
-.social-media-marketing h2 {
-margin-bottom: 20px;
-font-size: 36px;
-}
-```
+Examples of unacceptable behavior include:
 
-After:
-```
-.search-engine-optimization,
-.online-reputation-management,
-.social-media-marketing {
-margin-bottom: 20px;
-padding: 50px;
-height: 300px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: #0072bb;
-color: #ffffff;
-}
+* The use of sexualized language or imagery, and sexual attention or
+advances of any kind
+* Trolling, insulting or derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others’ private information, such as a physical or email
+address, without their explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+professional setting
 
-.search-engine-optimization img,
-.online-reputation-management img,
-.social-media-marketing img {
-max-height: 200px;
-}
+Enforcement Responsibilities
+Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.
+Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.
+Scope
+This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.
+Enforcement
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement at
+[INSERT CONTACT METHOD].
+All complaints will be reviewed and investigated promptly and fairly.
+All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.
+Enforcement Guidelines
+Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
+1. Correction
+Community Impact: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
+Consequence: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
+2. Warning
+Community Impact: A violation through a single incident or series
+of actions.
+Consequence: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or
+permanent ban.
+3. Temporary Ban
+Community Impact: A serious violation of community standards, including
+sustained inappropriate behavior.
+Consequence: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
+4. Permanent Ban
+Community Impact: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior,  harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
+Consequence: A permanent ban from any sort of public interaction within
+the community.
+Attribution
+This Code of Conduct is adapted from the Contributor Covenant,
+version 2.0, available at
+https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+Community Impact Guidelines were inspired by Mozilla’s code of conduct
+enforcement ladder.
+For answers to common questions about this code of conduct, see the FAQ at
+https://www.contributor-covenant.org/faq. Translations are available at
+https://www.contributor-covenant.org/translations.
 
-.search-engine-optimization h2,
-.online-reputation-management h2,
-.social-media-marketing h2 {
-margin-bottom: 20px;
-font-size: 36px;
-}
-```
-    
-*  Lines 108-115: this ".benefits" class selector contains two irrelevent declarations that have been deleted: "clear: both" and "height: 100%"
-* Lines 117-136: this block of CSS selectors and declarations (reflected in the < aside >< / aside > tags in the HTML and the sidebar in the webpage) can also be consolidated into three sections based on their identical declarations
+---
 
-Before:
-```
-.benefit-lead {
-margin-bottom: 32px;
-color: #ffffff;
-}
-
-.benefit-brand {
-margin-bottom: 32px;
-color: #ffffff;
-}
-
-.benefit-cost {
-margin-bottom: 32px;
-color: #ffffff;
-}
-
-.benefit-lead h3 {
-margin-bottom: 10px;
-text-align: center;
-}
-
-.benefit-brand h3 {
-margin-bottom: 10px;
-text-align: center;
-}
-
-.benefit-cost h3 {
-margin-bottom: 10px;
-text-align: center;
-}
-
-.benefit-lead img {
-display: block;
-margin: 10px auto;
-max-width: 150px;
-}
-
-.benefit-brand img {
-display: block;
-margin: 10px auto;
-max-width: 150px;
-}
-
-.benefit-cost img {
-display: block;
-margin: 10px auto;
-max-width: 150px;
-}
-```
-
-After:
-```
-.benefit-lead,
-.benefit-brand,
-.benefit-cost {
-margin-bottom: 32px;
-color: #ffffff;
-}
-
-.benefit-lead h3,
-.benefit-brand h3,
-.benefit-cost h3 {
-text-align: center;
-}
-
-.benefit-lead img,
-.benefit-brand img,
-.benefit-cost img {
-display: block;
-margin: 10px auto;
-max-width: 150px;
-}
-```
-
-* Line 147: ".footer h2" has been changed to ".footer h4" to reflect the corresponding change in the HTML page
-
------------------------------------------------------
-
-# URLs:
+## URLs:
 * deployed application: https://craindavis.github.io/CodeRefactor/
-* GitHub Repository: https://github.com/CrainDavis/CodeRefactor
+* GitHub repository: https://github.com/CrainDavis/CodeRefactor
+
+---
+
+## Questions: 
+for any questions, please contact:
+
+![CrainDavis](https://avatars0.githubusercontent.com/u/59345254?v=4) 
+
+__[CrainDavis](https://github.com/CrainDavis)__ at chyna.davis11@gmail.com
